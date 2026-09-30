@@ -4,13 +4,13 @@
    ================================================================ */
 
 :root {
-  /* Kleur 01 – hoofdkleur: #FF5900 */
+  /* Kleur 01 – hoofdkleur: #9447F0 */
   --kleur-01: #FF5900;
-  /* Kleur 02 – lichte accentkleur: #F8CBAF */
+  /* Kleur 02 – lichte accentkleur: #E5C7FE */
   --kleur-02: #F8CBAF;
-  /* Kleur 03 – zacht accent: #FF996E */
+  /* Kleur 03 – zacht accent: #D594FF */
   --kleur-03: #FF996E;
-  /* Kleur 04 – donker accent: #D2652A */
+  /* Kleur 04 – donker accent: #5A4494 */
   --kleur-04: #D2652A;
 
   --hoofdkleur: var(--kleur-01);
