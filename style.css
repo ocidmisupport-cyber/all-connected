@@ -674,9 +674,9 @@ body[data-page="dagtaken"] .helper-row {
 
 body[data-page="dagtaken"] .banner-text { flex: 0 0 auto; }
 body[data-page="dagtaken"] .task-picker {
-  flex: 0 0 340px;
+  flex: 0 0 280px;
   min-width: 0;
-  margin-right: 56px;
+  margin-right: 0;
 }
 body[data-page="dagtaken"] .task-picker select {
   width: 100%;
