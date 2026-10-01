@@ -1,16 +1,16 @@
 /* ================================================================
-   Sigrid Styling - startpagina
-   Dit bestand bevat alleen de vormgeving van startpagina(1).html.
+   All Connected
+   Dit bestand bevat alle vormgeving van de pagina's in deze map.
    ================================================================ */
 
 :root {
-  /* Kleur 01 – hoofdkleur:  */
+  /* Kleur 01 – hoofdkleur: #9447F0 */
   --kleur-01: #9447F0;
-  /* Kleur 02 – lichte accentkleur: # */
+  /* Kleur 02 – lichte accentkleur: #E5C7FE */
   --kleur-02: #E5C7FE;
-  /* Kleur 03 – zacht accent: # */
+  /* Kleur 03 – zacht accent: #D594FF */
   --kleur-03: #D594FF;
-  /* Kleur 04 – donker accent: # */
+  /* Kleur 04 – donker accent: #5A4494 */
   --kleur-04: #5A4494;
 
   --hoofdkleur: var(--kleur-01);
@@ -55,8 +55,8 @@ body {
   overflow: hidden;
   border-radius: var(--radius-xl);
   background:
-    radial-gradient(circle at 18% 14%, rgb(255 153 110 / 0.23) 0 14%, transparent 34%),
-    radial-gradient(circle at 87% 88%, rgb(255 89 0 / 0.38) 0 19%, transparent 44%),
+    radial-gradient(circle at 18% 14%, color-mix(in srgb, var(--kleur-03) 23%, transparent) 0 14%, transparent 34%),
+    radial-gradient(circle at 87% 88%, color-mix(in srgb, var(--kleur-01) 38%, transparent) 0 19%, transparent 44%),
     linear-gradient(160deg, #000000 0%, #1f1f1f 38%, var(--kleur-04) 68%, var(--kleur-01) 100%);
   box-shadow: var(--shadow);
 }
@@ -216,7 +216,7 @@ body {
 .action-card:hover,
 .action-card:focus-visible {
   transform: translateY(-2px);
-  background: rgba(255, 239, 219, 0.82);
+  background: color-mix(in srgb, var(--kleur-02) 72%, white);
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
   outline: none;
 }
@@ -227,7 +227,7 @@ body {
   display: grid;
   place-items: center;
   border-radius: 15px;
-  background: rgba(255, 238, 218, 0.78);
+  background: color-mix(in srgb, var(--kleur-02) 72%, white);
   color: var(--donker-accent);
   font-size: 22px;
   line-height: 1;
@@ -279,7 +279,6 @@ body {
 }
 
 .menu-page .page-shell {
-  transform: translateY(9px);
   min-height: 0;
   box-shadow: none;
 }
@@ -291,7 +290,7 @@ body {
    ================================================================= */
 .landing-page {
   min-height: 100vh;
-  background: #1b120d;
+  background: #1f1f1f;
 }
 
 .landing-shell {
@@ -310,7 +309,7 @@ body {
   padding: 0;
   overflow: hidden;
   border: 0;
-  background: #1b120d;
+  background: #1f1f1f;
   color: #fff;
   cursor: pointer;
   text-align: left;
@@ -332,7 +331,7 @@ body {
 .landing-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.24) 45%, rgba(0, 0, 0, 0.04) 72%);
+  background: transparent;
 }
 
 .landing-copy {
@@ -358,7 +357,7 @@ body {
   width: fit-content;
   padding: 6px 11px;
   border-radius: 999px;
-  background: rgb(210 101 42 / 0.92);
+  background: color-mix(in srgb, var(--kleur-01) 92%, transparent);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.04em;
@@ -457,7 +456,7 @@ body {
 }
 
 /* =================================================================
-   Gedeelde opmaak voor de drie pagina's in het popupvenster
+   Gedeelde opmaak voor de pagina's in het popupvenster
    ================================================================= */
 html,
 body { min-height: 100%; }
@@ -516,7 +515,7 @@ body[data-page] .chips span {
   padding: 6px 11px;
   border-radius: 999px;
   background: rgba(255,255,255,0.93);
-  color: #12333a;
+  color: #1f1f1f;
   font-size: clamp(11px, 1.08vw, 14px);
   white-space: nowrap;
 }
@@ -639,7 +638,7 @@ body[data-page] .action-link:hover,
 body[data-page] .resource-link:hover,
 body[data-page] .helper-button:hover {
   background: var(--kleur-03);
-  color: #12333a;
+  color: #1f1f1f;
 }
 
 /* Extra onderdelen van de dagtakenpagina. */
@@ -664,7 +663,7 @@ body[data-page="dagtaken"] .task-picker select {
   border: 2px solid rgba(255,255,255,0.95);
   border-radius: 999px;
   background: var(--kleur-02);
-  color: #5a3317;
+  color: #1f1f1f;
   font-weight: 700;
 }
 
