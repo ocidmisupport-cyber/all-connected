@@ -264,6 +264,27 @@ body {
 /* Extra ruimte tussen Beroepsproject en Zelfbeoordeling. */
 .self-review-card { margin-top: 18px; }
 
+/* All Connected heeft één extra menu-item; de vijf links blijven rechts passen. */
+.all-connected-menu .action-list { gap: 7px; margin-bottom: 10px; }
+.all-connected-menu .action-card {
+  grid-template-columns: 43px 1fr 20px;
+  gap: 9px;
+  min-height: 60px;
+  padding: 8px 14px 8px 12px;
+  border-left-width: 6px;
+}
+.all-connected-menu .icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.all-connected-menu .action-title { margin-bottom: 2px; font-size: 16px; }
+.all-connected-menu .action-desc { font-size: 11.5px; }
+.all-connected-menu .arrow { font-size: 19px; }
+.all-connected-menu .project-card { min-height: 64px; }
+.all-connected-menu .self-review-card { margin-top: 11px; }
+
 /*
    Menuachtergrond: alle lagen gebruiken alleen kleur 01 t/m 04.
    Pas de vier kleurvariabelen bovenaan aan om het hele verloop te wijzigen.
