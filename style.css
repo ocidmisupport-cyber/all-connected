@@ -720,7 +720,7 @@ body[data-page="beroepsproject"] .banner-caption { position: absolute; right: 0;
 }
 
 /* LinkedIn en Dagtaken: ruimte onder de banner voor menu en tekstvak. */
-body[data-page="linked"] .banner { height: calc(28% + 100px); }
-body[data-page="linked"] .tab-page { height: calc(72% - 100px); }
-body[data-page="dagtaken"] .banner { height: calc(25% + 100px); }
-body[data-page="dagtaken"] .tab-page { height: calc(75% - 100px); }
+body[data-page="linked"] .banner { height: calc(28% + 60px); }
+body[data-page="linked"] .tab-page { height: calc(72% - 60px); }
+body[data-page="dagtaken"] .banner { height: calc(25% + 60px); }
+body[data-page="dagtaken"] .tab-page { height: calc(75% - 60px); }
