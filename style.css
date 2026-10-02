@@ -389,7 +389,8 @@ body {
 
 /* Op een smal scherm wordt de startpagina onder elkaar gezet. */
 @media (max-width: 760px) {
-  body { overflow: auto; }
+  /* Ook op kleinere schermen mogen geen scrollbalken verschijnen. */
+  body { overflow: hidden; }
 
   .page-shell {
     width: 100%;
@@ -560,7 +561,7 @@ body[data-page] .tab-menu {
   flex: 0 0 21%;
   width: 21%;
   padding: 10px 0 10px 12px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 body[data-page] .tab-button {
@@ -589,7 +590,7 @@ body[data-page] .tab-content-area {
   min-width: 0;
   height: 100%;
   padding: 20px 28px;
-  overflow-y: auto;
+  overflow-y: hidden;
   border-radius: 18px;
   background: rgba(255,255,255,0.76);
   color: #24343a;
@@ -719,8 +720,11 @@ body[data-page="beroepsproject"] .banner-caption { position: absolute; right: 0;
   body[data-page="beroepsproject"] .banner-image-link { display: none; }
 }
 
-/* LinkedIn en Dagtaken: ruimte onder de banner voor menu en tekstvak. */
-body[data-page="linked"] .banner { height: calc(28% + 60px); }
-body[data-page="linked"] .tab-page { height: calc(72% - 60px); }
-body[data-page="dagtaken"] .banner { height: calc(25% + 60px); }
-body[data-page="dagtaken"] .tab-page { height: calc(75% - 60px); }
+/* LinkedIn: menu en tekstvak hoger én met meer ruimte, zonder scrollbalken. */
+body[data-page="linked"] .banner { height: calc(28% + 30px); }
+body[data-page="linked"] .tab-page { height: calc(72% - 30px); }
+body[data-page="linked"] .tab-menu .tab-button { margin-bottom: 3px; }
+
+/* Dagtaken: menu en tekstvak iets hoger, met meer ruimte voor de inhoud. */
+body[data-page="dagtaken"] .banner { height: calc(25% + 30px); }
+body[data-page="dagtaken"] .tab-page { height: calc(75% - 30px); }
